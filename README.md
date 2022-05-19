@@ -1,4 +1,5 @@
-#NeontagBot
-TELEGRAMIN GELIŞMIŞ TAGGER BOTU
+⚔️ **RiviaTagger**
 
-DEVELOPED BY @evetbenim38
+Telegram'ın en gelişmiş etiket botu.
+
+DEVELOPED BY @emirpng
