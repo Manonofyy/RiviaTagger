@@ -1,0 +1,59 @@
+{
+      "name": "RiviaTagger bot",
+      "description": "RiviaTagger",
+      "keywords": [
+         "telegram",
+         "tagger",
+         "group",
+         "riviatag",
+         "riviabots"
+      ],   
+   "repository": "https://github.com/emirpng/RiviaTagger",
+   "env": {
+      "TOKEN": {
+         "description": "Botunuzun tokenini buraya girin.",
+         "value": ""
+      },
+      "APP_ID": {
+         "description": "my.telegram.org adresinden aldığınız APP ID girin.",
+         "value": ""
+      },
+      "API_HASH": {
+         "description": "my.telegram.org adresinden aldığınız API HASH girin.",
+         "value": ""
+      },
+      "USERNAME": {
+         "description": "Botun kullanıcı adını girin '@' işareti olmadan.",
+         "value": "riviatag_bot"
+      },
+      "sahib": {
+         "description": "Kendi kullanıcı adınızı girin '@' işareti olmadan.",
+         "value": ""
+      },
+      "support": {
+         "description": "Buraya support grubunuz yada kanalınızın kullanıcı adı @ işareti olmadan yazın",
+         "value": "riviatag_bot"
+      },
+      "group": {
+         "description": "Buraya botun logları için grubunuz id'sini girin.",
+         "value": "-"
+      },
+      "startmesaj": {
+         "description": "Bota özelden start verilince gönderilecek mesaj girin.",
+         "value": "**Ben grubunuzdaki üyeleri etiketleyebilen bir botum. Beni grubunuza alıp çalıştırabilirsiniz.**\n\n**Komutlar için /help yazın.**"
+      },
+      "qrupstart": {
+         "description": "Bota grupta start verilince gönderilecek mesaj girin.",
+          "value": "**Şu an aktif olarak çalışmaktayım.** 🕊🍃\n\n**Komutlar hakkında bilgi için /help yazın."
+      },
+      "komutlar": {
+         "description":"Komut detaylarını girin.",
+          "value": "Komutlar:\n\n/utag -text- Kullanıcıları 5'li etiketlerim.\n/atag -text- Yöneticileri etiketlerim.\n/tektag Üyeleri tek tek etiketlerim.\n/etag - Üyeleri emoji ile etiketlerim.\n/soztag - Üyeleri sözler ile etiketlerim.\n/gisimtag - Üyeleri güzel isimlerle etiketlerim.\n/cancel - Etiket işlemini iptal ederim .\n\nYalnızca yöneticiler bu komutları kullanabilir."
+      },
+      "ozel_list": {
+         "description": "Hesabınızın id'sini girin.",
+         "value": ""
+      }
+     
+   }
+ }
