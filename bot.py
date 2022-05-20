@@ -488,7 +488,7 @@ async def mentionall(event):
   admins = []
   async for admin in client.iter_participants(event.chat_id, filter=ChannelParticipantsAdmins):
     admins.append(admin.id)
-  if not event.sender_id in ozel_list:
+  if not event.sender_id in admins and ozel_list:
     return await event.respond("**⛔️👨🏻‍💻 Bu komutu sadece bot yöneticileri kullanabilir!**")
   
   if event.pattern_match.group(1):
