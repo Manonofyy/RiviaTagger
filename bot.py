@@ -488,7 +488,7 @@ async def mentionall(event):
   admins = []
   async for admin in client.iter_participants(event.chat_id, filter=ChannelParticipantsAdmins):
     admins.append(admin.id)
-  if not event.sender_id in admins and ozel_list:
+  if not event.sender_id in ozel_list:
     return await event.respond("**⛔️👨🏻‍💻 Bu komutu sadece bot yöneticileri kullanabilir!**")
   
   if event.pattern_match.group(1):
@@ -518,7 +518,7 @@ async def mentionall(event):
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, f"{msg}\n{usrtxt}")
-        await asyncio.sleep(3)
+        await asyncio.sleep(1.5)
         usrnum = 0
         usrtxt = ""
         
@@ -539,7 +539,7 @@ async def mentionall(event):
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
-        await asyncio.sleep(3)
+        await asyncio.sleep(1.5)
         usrnum = 0
         usrtxt = ""
      
