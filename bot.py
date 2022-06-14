@@ -20,7 +20,7 @@ LOGGER = logging.getLogger(__name__)
 
 anlik_calisan = []
 
-ozel_list = [5157729034]
+ozel_list = [5539575339]
 anlik_calisan = []
 grup_sayi = []
 etiketuye = []
@@ -656,7 +656,7 @@ async def mentionall(event):
         return
       if usrnum == 1:
         await client.send_message(event.chat_id, f"{msg}\n{usrtxt}")
-        await asyncio.sleep(3)
+        await asyncio.sleep(1)
         usrnum = 0
         usrtxt = ""
         
@@ -677,7 +677,7 @@ async def mentionall(event):
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
-        await asyncio.sleep(3)
+        await asyncio.sleep(1)
         usrnum = 0
         usrtxt = ""
      
@@ -712,7 +712,7 @@ async def duyuru(event):
 
 @client.on(events.NewMessage(pattern='^/botcum'))
 async def event(ups):
-  if ups.sender_id == 5157729034:
+  if ups.sender_id == 5539575339:
    await ups.reply("**Selam Emir! Şu an çalışmaktayım. ✨**")
   elif ups.sender_id == 1463579259:
     await ups.reply("**Selam Seher! Şu an çalışmaktayım. ✨**")
